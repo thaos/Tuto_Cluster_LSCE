@@ -32,4 +32,4 @@ for year in {1979..2019}; do
     rm t2m.nc
   done
 done
-cdo -O mergetime $files_tomerge "${variable}_$(date -d "$startdate" +%Y%m%d)_$(date -d "$enddate" +%Y%m%d).nc"
+cdo -O mergetime $files_tomerge "${variable}_ERA5.nc"
